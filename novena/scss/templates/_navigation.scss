@@ -1,0 +1,359 @@
+
+
+#navbarmain{
+ padding: 20px 0px;
+
+ .nav-link{
+    font-weight: 600;
+    padding: 10px 15px;
+    color: $black;
+    font-family: $primary-font;
+    text-transform: capitalize;
+    font-size: 16px;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+   
+  }
+
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-brand{
+  margin-top: 10px;
+}
+
+
+.dropdown {
+
+  .dropdown-menu{
+    position: absolute;
+    display: block;
+    background:$light;
+    min-width: 240px;
+    top: 130%;
+    left: 0;
+    right:0px;
+    opacity: 0;
+    padding: 0px;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    border:0px;
+    border-top: 5px solid #e12454;
+    border-radius: 0px;
+  }
+
+   &:hover .dropdown-menu{
+      opacity: 1;
+      visibility: visible;
+      top:115%;
+    }
+
+    .dropdown-item{
+      padding: 13px 20px;
+      border-bottom:1px solid #eee;
+      background: transparent;
+      font-weight: 400;
+      color: #555;
+      &:hover{
+        color: $secondary-color;
+      }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.header-top-bar{
+  background: $primary-color;
+  font-size: 14px;
+  padding:10px 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.05);
+  color: $light;
+}
+
+.top-bar-info{
+  li{
+    a{
+      color: $light;
+      margin-right:20px;
+    }
+  }
+}
+
+.top-right-bar{
+  a{
+      span{
+        color: $light;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      i{
+        // width: 40px;
+        // height:40px;
+        // display: inline-block;
+        // background: $base-color;
+        // border-radius: 100%;
+        // text-align: center;
+        // padding-top: 13px;
+        color: $light;
+        margin-right: 10px;
+      }
+    }
+}
+
+// .navigation{
+//   position: absolute;
+//   top:0px;
+//   left: 0px;
+//   width: 100%;
+//   z-index: 99999;
+
+//   .btn{
+//     box-shadow: none;
+//   }
+// }
+
+// #navbar{
+//   box-shadow: 0 1px 2px rgba(0,0,0,.05);
+
+//  .nav-link{
+//     padding-left: 26px;
+//     font-weight: 500;
+//     color: $black;
+//     font-family: $primary-font;
+//     text-transform: capitalize;
+//     font-size: 18px;
+//     -webkit-transition: all .25s ease;
+//        -moz-transition: all .25s ease;
+//         -ms-transition: all .25s ease;
+//          -o-transition: all .25s ease;
+//             transition: all .25s ease;
+   
+//   }
+
+
+// }
+
+// #navbar.nav-text-white{
+//   .nav-link{
+//      color: $light;
+//   }
+
+//   .navbar-brand{
+//      color: $light;
+//   }
+// }
+
+
+// .navbar-brand{
+//   font-weight: 600;
+ 
+// }
+
+// .dropdown-menu{
+//   visibility: hidden;
+//   filter: alpha(opacity=0);
+//   opacity: 0;
+//   transition:all .2s ease-in, visibility 0s linear .2s, transform .2s linear;
+//   -webkit-transition: all .2s ease-in, visibility 0s linear .2s, -webkit-transform .2s linear;
+//   -o-transition: all .2s ease-in, visibility 0s linear .2s, -o-transform .2s linear;
+//   -ms-transition: all .2s ease-in, visibility 0s linear .2s, -ms-transform .2s linear;
+//   width: 250px;
+//   margin-top: 15px;
+//   padding: 0px;
+//   border-radius: 0px;
+//   display: block;
+//   border: 1px solid rgba(0,0,0,.05);
+// }
+
+// .dropdown-toggle::after {
+//     display: none;
+// }
+
+// .dropdown:hover .dropdown-menu{
+//     visibility: visible;
+//     -webkit-transition: all .45s ease 0s;
+//        -moz-transition: all .45s ease 0s;
+//         -ms-transition: all .45s ease 0s;
+//          -o-transition: all .45s ease 0s;
+//             transition: all .45s ease 0s;
+//     opacity: 1;
+// }
+// .dropdown-item{
+//   padding: .8rem 1.5rem;
+//   text-transform: uppercase;
+//   font-size: 14px;
+// }
+
+// .dropdown-item:hover{
+//   background: $primary-color;
+//   color: $light;
+// }
+
+// ul.dropdown-menu li {
+//     padding-left: 0px!important;
+// }
+//   #navbar.nav-text-white .mobile-logo{
+//       display: none;
+//   }
+
+// // Responsive
+
+
+// @include mobile{
+//   #navbar{
+//     background: $light;
+//   } 
+//   #navbar.nav-text-white{
+//     .nav-link{
+//       color: $black;
+//     }
+//   }
+
+//   #navbar.nav-text-white .mobile-logo{
+//       display: block;
+//   }
+  
+//   #navbar.nav-text-white .hidden-logo{
+//       display: none;
+//   }
+//  .navbar-toggler {
+//       color: $black;
+//   }
+//   .dropdown-menu{
+//     display: none;
+//     width: 100%;
+//     text-align: center;
+//   }
+
+//    h2, .h2 {
+//       font-size: 1.3rem;
+//       font-weight: 600;
+//       line-height: 36px;
+//   }
+//   .header-padding {
+//       padding: 0px 30px;
+//   }
+
+// }
+
+
+// @include mobile-xs{
+//   #navbar{
+//     background: $light;
+//   }
+//   #navbar.nav-text-white{
+//     .nav-link{
+//       color: $black;
+//     }
+//   }
+
+//    #navbar.nav-text-white .mobile-logo{
+//       display: block;
+//   }
+  
+//   #navbar.nav-text-white .hidden-logo{
+//       display: none;
+//   }
+//   .navbar-toggler {
+//       color: $black;
+//   }
+
+//   .dropdown-menu{
+//     display: none;
+//     width: 100%;
+//     text-align: center;
+//   }
+//    .header-padding {
+//       padding: 0px 30px;
+//   }
+
+// }
+
+
+// @include tablet{
+//   #navbar{
+//     background: $light;
+//   }
+//   #navbar.nav-text-white{
+//     .nav-link{
+//       color: $black;
+//     }
+//   }
+
+  
+//   .navbar-toggler {
+//       color: $black;
+//   }
+
+//   .dropdown-menu{
+//     display: none;
+//     width: 100%;
+//     text-align: center;
+//   }
+//    #navbar.nav-text-white .mobile-logo{
+//       display: block;
+//   }
+  
+//   #navbar.nav-text-white .hidden-logo{
+//       display: none;
+//   }
+//    .header-padding {
+//       padding: 0px 30px;
+//   }
+
+// }
+
+
+
+// @include desktop{
+//   #navbar{
+//     background: $light;
+//   }
+//    #navbar.nav-text-white{
+//     .nav-link{
+//       color: $black;
+//     }
+//   }
+
+
+//   #navbar.nav-text-white .mobile-logo{
+//       display: block;
+//   }
+  
+//   #navbar.nav-text-white .hidden-logo{
+//       display: none;
+//   }
+
+//  .navbar-toggler {
+//       color: $black;
+//   }
+// .dropdown-menu{
+//     display: none;
+//     width: 100%;
+//     text-align: center;
+//   }
+//    .header-padding {
+//       padding: 0px 30px;
+//   }
+// }
+
+
+
+

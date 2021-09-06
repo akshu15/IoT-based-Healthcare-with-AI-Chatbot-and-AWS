@@ -1,0 +1,145 @@
+.department-service{
+	margin-bottom: 40px;
+	li{
+		margin-bottom: 10px;
+
+		i{
+			color: $secondary-color;
+		}
+	}
+}
+
+//  Doctors
+
+
+
+.doctors{
+	.btn-group{
+		.btn{
+			border-radius: 0px;
+			margin: 0px 2px;
+			text-transform: capitalize;
+			font-size: 16px;
+			padding: .6rem 1.5rem;
+			cursor: pointer;
+
+			&.active{
+				box-shadow: none!important;
+				border-color:transparent;
+				background: $secondary-color;
+				color: $light;
+			}
+
+			&.focus{
+				box-shadow: none!important;
+				border-color:transparent;
+			}
+			&:focus{
+				box-shadow: none!important;
+				border-color:transparent;
+				background: $secondary-color;
+				color: $light;
+			}
+
+			&:hover{
+				box-shadow: none!important;
+				border-color:transparent;
+				background: $secondary-color;
+				color: $light;
+			}
+
+		}
+	}
+
+	.btn-group > .btn-group:not(:last-child) > .btn, .btn-group > .btn:not(:last-child):not(.dropdown-toggle),.btn-group > .btn:not(:first-child) {
+	    border-radius: 3px;
+	}
+}
+
+// Doctors
+
+.doctor-inner-box{
+	overflow: hidden;
+	.doctor-profile{
+		overflow: hidden;
+		position: relative;
+		box-shadow: 0px 8px 16px 0px rgba(200, 183, 255, 0.2);
+
+		.doctor-img{
+			-webkit-transition: all .35s ease;
+		   -moz-transition: all .35s ease;
+		    -ms-transition: all .35s ease;
+		     -o-transition: all .35s ease;
+		        transition: all .35s ease;
+
+			&:hover{
+				-webkit-transform: scale(1.1);
+				   -moz-transform: scale(1.1);
+				    -ms-transform: scale(1.1);
+				     -o-transform: scale(1.1);
+				        transform: scale(1.1);
+			}
+		}
+	}
+}
+
+.lh-35{
+	line-height: 35px;
+}
+
+
+
+// Doctors info
+
+
+.doctor-info{
+	li {
+		margin-bottom: 10px;
+		color: $black;
+		i{
+			margin-right: 20px;
+			color: $secondary-color;
+		}
+	}
+}
+
+.read-more{
+	color: $primary-color;
+}
+
+
+@include mobile{
+	.doctors{
+		.btn-group{
+			display: block;
+			.btn{
+				margin: 8px 3px;
+			}
+		}
+		
+	}
+}
+
+@include mobile-xs{
+	.doctors{
+		.btn-group{
+			display: block;
+			.btn{
+				margin: 8px 3px;
+			}
+		}
+		
+	}
+}
+
+@include tablet{
+	.doctors{
+		.btn-group{
+			display: block;
+			.btn{
+				margin: 8px 3px;
+			}
+		}
+		
+	}
+}

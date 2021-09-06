@@ -1,0 +1,233 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col-2 {
+  width: calc((100% - 30px) / 2);
+}
+@media (max-width: 767px) {
+  .col-2 {
+    width: 100%;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  margin: 100px auto;
+  max-width: 680px;
+  background: rgba(0,0,0,0.5);
+}
+.container,.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input,.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark,.checkmark1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.checkmark1{
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark,.container1:hover input ~ .checkmark1 {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark,.container1 input:checked ~ .checkmark1 {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after,.checkmark1:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after,.container1 input:checked ~ .checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.container1 .checkmark1:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+body {
+  font-family: "Poppins", "Arial", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  background-image: url(../images/login-bg.png);
+  background-size: cover;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 40px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 22px;
+  background: #39b49b;
+}
+
+.btn:hover {
+  background: #2196F3;
+}
+
+input {
+  outline: none;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.input--style-4 {
+  line-height: 50px;
+  background: #fafafa;
+  box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #666;
+  transition: all 0.4s ease;
+   position: relative;
+  margin-bottom: 22px;
+}
+.input-group select{
+  padding: 5px;
+  outline: none;
+  margin: 0;
+  border: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 14px;
+  font-family: inherit;
+   position: relative;
+  margin-bottom: 22px;
+}
+
+
+.label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);  
+}
+
+ .card-body {
+  padding: 57px 65px;
+  padding-bottom: 65px;
+}
+
+@media (max-width: 767px) {
+  .card-body {
+    padding: 50px 40px;
+  }
+}
+
+/************Resume******************/
+.resume{
+display: flex;
+flex-direction: row;
+margin: 20px;
+justify-content: space-between;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+    font-size: 15px;
+    padding: 5px;
+    color: #555;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #c3c3c3;
+}
+.inputfile + label {
+  cursor: pointer; /* "hand" cursor */
+}

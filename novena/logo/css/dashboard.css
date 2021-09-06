@@ -1,0 +1,109 @@
+
+body{
+  margin: 0;
+}
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+/******************Nav Bar**********************/
+.bs-example{
+color: #fff;
+
+}
+.navbar{
+    background-color: #551A88;
+  }
+.navbar-nav .active{
+    color: #fff;
+}
+.nav-item,.nav-link{
+    color: #c3c3c3;
+    margin-left: 15px;
+}
+.nav-item:hover,.nav-link:hover{
+    color: #fff;
+}
+.company-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: relative;
+
+  z-index: -1; /* Behind the navbar */
+  padding: 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px; /* Height of navbar */
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+
+/************** Breadcrumb***************/
+.breadcrumb{
+  background-color:#F5EEF8 ;
+}
+.breadcrumb a{
+  color: #A569BD;
+}
+.breadcrumb-item.active{
+  color: #512E5F;
+}
+/************Heading************/
+.h2{
+  color: #551A88;
+}
+/************Button Styling******/
+.btn1{
+  background-color: #551A88;
+  color: #fff;
+  
+}
+.btn1:hover{
+  background-color: #F5EEF8 ;
+  color: #551A88;
+  border-color: #551A88;
+}

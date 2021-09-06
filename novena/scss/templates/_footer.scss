@@ -1,0 +1,139 @@
+.footer{
+ padding-bottom: 10px;
+
+  .copyright{
+    a{
+      font-weight: 600;
+    }
+  }
+}
+
+
+.lh-35{
+  line-height: 35px;
+}
+
+
+.logo{
+  h3{
+    color: $primary-color;
+  }
+
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  span{
+    color: $primary-color;
+  }
+}
+
+
+.widget{
+
+  .divider{
+    height:3px;
+  }
+
+  h4{
+      color: $primary-color;
+  }
+
+  .footer-menu a{
+    color: $base-color;
+
+    &:hover{
+      color: $secondary-color;
+    }
+  }
+ 
+}
+
+.footer-contact-block{
+  span{
+    font-weight: 400;
+    color: $base-color;
+  }
+  i{
+    font-size: 20px;
+  }
+ 
+}
+
+.footer-btm{
+  border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+.footer-socials{
+  li a{
+    width: 45px;
+    height:45px;
+    background: $base-color;
+    color: $light;
+    display: inline-block;
+    text-align: center;
+    border-radius:100%;
+    padding-top: 12px;
+  }
+}
+
+
+.widget-contact{
+  h6{
+    font-weight: 500;
+    margin-bottom: 18px;
+
+    i{
+      color: $secondary-color;
+    }
+  }
+
+
+}
+
+.subscribe{
+  position: relative;
+  .form-control{
+    border-radius:50px;
+    height:60px;
+    padding-left: 25px;
+    border-color:#eee;
+  }
+  .btn{
+    position: absolute;
+    right:6px;
+    top:6px;
+  }
+}
+
+//  Back To Top
+//  
+
+.backtop{
+  position: fixed;
+  background: $secondary-color;
+  z-index: 9999;
+  display: inline-block;
+  right: 55px;
+  width: 60px;
+  height:60px;
+  bottom: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 50px;
+
+  i{
+    color: $light;
+    font-size: 20px;
+  }
+}
+
+
+
+.reveal{
+    transition: all .3s;
+    cursor: pointer;
+    opacity: 1;
+}

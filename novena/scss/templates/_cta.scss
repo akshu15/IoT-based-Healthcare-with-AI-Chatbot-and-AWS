@@ -1,0 +1,41 @@
+.cta{
+	background: url("../images/bg/bg-4.jpg")no-repeat 50% 50%;
+	background-size: cover;
+	position: relative;
+
+	&:before{
+		position: absolute;
+		content: "";
+		left: 0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		background: rgba(34, 58, 102,.95);
+	}
+}
+
+.mb-30{
+	margin-bottom: 30px;
+}
+
+.text-color-primary{
+	color: $primary-color;
+}
+
+.cta-section{
+	margin-bottom: -80px;
+}
+
+//  CTA -2 
+//  
+.cta-2{
+	background: url("../images/bg/cta-bg.png") no-repeat;
+	background-position: center center;
+}
+
+
+.cta-page{
+	background: url("../images/bg/banner.jpg")no-repeat;
+	background-size: cover;
+	position: relative;
+}

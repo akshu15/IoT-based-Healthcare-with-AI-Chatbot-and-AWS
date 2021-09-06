@@ -1,0 +1,41 @@
+.counter-stat{
+	text-align: center;
+	padding: 55px 0px 40px 0px;
+	position: relative;
+	i{
+		display: block;
+		color: rgba(255,255,255,.06);
+		font-size: 70px;
+		position: absolute;
+		left: 0px;
+		right:0px;
+		top:0px;
+		-webkit-transform: translateY(25px);
+		   -moz-transform: translateY(25px);
+		    -ms-transform: translateY(25px);
+		     -o-transform: translateY(25px);
+		        transform: translateY(25px);
+	}
+
+	span{
+		font-size: 70px;
+		color: $light;
+	}
+
+
+	p{
+		margin-bottom: 0px;
+		color: rgba(255,255,255,.7);
+	}
+}
+
+.mb--80{
+	margin-bottom: -80px;
+}
+
+
+
+
+
+
+

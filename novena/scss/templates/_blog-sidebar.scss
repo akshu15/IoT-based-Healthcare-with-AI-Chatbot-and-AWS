@@ -1,0 +1,111 @@
+
+
+.sidebar-widget {
+  margin-bottom:30px;
+  padding-bottom:35px;
+
+  h5{
+    margin-bottom:30px;
+    position: relative;
+    padding-bottom: 15px;
+    &:before{
+      position: absolute;
+      content:"";
+      left: 0px;
+      bottom:0px;
+      width: 35px;
+      height: 3px;
+      background: $secondary-color;
+    }
+
+  }
+
+  // latest Posts
+  &.latest-post{
+    .media {
+      img{
+        border-radius:7px;
+      }
+      h6{
+        font-weight: 500;
+        line-height: 1.4;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  } //end latest posts
+
+  // Caterogry
+  &.category {
+    ul {
+      li {
+        margin-bottom: 10px;
+        a {
+          color: $black;
+          @include transition (all, 0.3s, ease);
+          &:hover {
+            color:$primary-color;
+            padding-left: 5px;
+          }
+        }
+        span{
+          margin-left: 10px;
+        }
+      }
+    }
+  } //end caterogry
+
+
+ &.tags{
+  a{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .075em;
+    line-height: 41px;
+    height: 41px;
+    font-weight: 500;
+    border-radius: 20px;
+    color: #666;
+    display: inline-block;
+    background-color: #eff0f3;
+    margin: 0 7px 10px 0;
+    padding: 0 25px;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    transition: all .2s ease;
+
+    &:hover{
+      color: $light;
+      background: $primary-color;
+    }
+  }
+ }
+
+&.schedule-widget{
+  background: #f4f9fc;
+  padding: 25px;
+  ul {
+      li{
+      padding: 10px 0px;
+      border-bottom:1px solid #eee;
+    }
+  }
+}
+
+
+}
+
+
+// Search
+// 
+
+
+.search-form{
+  position: relative;
+  i{
+    position: absolute;
+    right: 15px;
+    top:35%;
+  }
+}

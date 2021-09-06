@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Doctor Registration</title>
+        <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="progress.css">
+
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+        <script type="text/javascript" src="progress.js"></script>
+
+
+    </head>
+    <body oncontextmenu='return false' class='snippet-body'>
+    <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
+                <h2 id="heading">Sign Up Your User Account</h2>
+                <p>Fill all form field to go to next step</p>
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active" id="account"><strong>Account</strong></li>
+                        <li id="personal"><strong>Personal</strong></li>
+                        <li id="image"><strong>Image</strong></li>
+                        <li id="details"><strong>Other</strong></li>
+                        <!-- <li id="confirm"><strong>Finish</strong></li> -->
+                    </ul>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div> <br> <!-- fieldsets -->
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Account Information:</h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">Step 1 - 4</h2>
+                                </div>
+                            </div> 
+                            <label class="fieldlabels">Email: *</label> 
+                            <input type="email" name="email" placeholder="Email Id" /> 
+
+                            <label class="fieldlabels">Password: *</label> 
+                            <input type="password" name="psd" placeholder="Password" /> 
+
+                            <label class="fieldlabels">Confirm Password: *</label> 
+                            <input type="password" name="rpsd" placeholder="Confirm Password" />
+
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="Next" />
+
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Personal Information:</h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">Step 2 - 4</h2>
+                                </div>
+                            </div>
+                            <label class="fieldlabels">Name: *</label>
+                            <input type="text" name="name" placeholder="Name" /> 
+
+                            
+
+                            <label class="fieldlabels">Contact No.: *</label> 
+                            <input type="text" name="phno" placeholder="Contact No." /> 
+                            <div class="row">
+                                <div class="col-7">
+                                    <label class="fieldlabels">Gender *</label>
+                                    <label class="container1">Female 
+                                        <input type="radio" name="gender" value="female">
+                                        <span class="checkmark1"></span>
+                                    </label>
+                                    <label class="container1">Male 
+                                        <input type="radio" name="gender" value="male">
+                                        <span class="checkmark1"></span>
+                                    </label>
+                                </div>
+                                <div class="col-5">
+                                    <label for="specialization">Specialization</label>
+                                      <select name="specialization">
+                                        <option value="dentist">Dentist</option>
+                                        <option value="neurosurgeon">Neurosurgeon</option>
+                                        <option value="pediatricians">Pediatricians</option>
+                                        <option value="cardiologist">Cardiologist</option>
+                                        <option value="dermatologist">Dermatologist</option>
+                                        <option value="gynecologist">Gynecologist</option>
+                                      </select>
+                                </div>
+                            </div>
+
+                            <label class="fieldlabels">Clinic Name </label> 
+                            <input type="text" name="clinic" placeholder="Clinic Name" />
+
+                            <div class="row">
+                                <div class="col-7">
+                                    
+                                    <label class="label">Work Experience</label>
+                                        
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="input-group">
+                                                <select class="input--style-4" name="year_of_exp">
+                                                  <option>Year</option>
+                                                  <option>0</option>
+                                                  <option>0-2</option>
+                                                  <option>2-4</option>
+                                                  <option>4-8</option>
+                                                  <option>8-10</option>
+                                                  <option>10-15</option>
+                                                  <option>above 15</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="Next" /> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Image Upload:</h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">Step 3 - 4</h2>
+                                </div>
+                            </div> 
+                            <label class="fieldlabels">Upload Your Photo:</label> 
+                            <input type="file" name="image" accept="image/*"> 
+
+                        </div> 
+                        <input type="button" name="next" class="next action-button" value="Next" /> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Other Details:</h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">Step 4 - 4</h2>
+                                </div>
+                            </div> 
+                            <label class="fieldlabels">Registration No: </label> 
+                            <input type="text" name="reg_no" placeholder="Registration No." /> 
+
+                            <div class="row">
+                                <div class="col-7">
+                                    
+                                    <label class="label">Registration Council</label>
+                                    
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <div class="input-group">
+                                                <select class="input--style-4" name="reg_council">
+                                                  <option>Council Name</option>
+                                                  <option>Maharashtra Medical Council</option>
+                                                  <option>Delhi Medical Council</option>
+                                                  <option>Karnataka Medical Council</option>
+                                                  <option>Maharashtra State Dental Council</option>
+                                                  <option>Tamil Nadu Medical Council</option>
+                                                  <option>Andhra Pradesh Medical Council</option>
+                                                  <option>Medical Council of India (MCI)</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        
+                                            
+                                        
+
+                                    </div> 
+                                </div>
+                            </div>
+                            <label class="fieldlabels">Registration Year *</label> 
+                            <input type="text" name="reg_year" placeholder="Registration Year" />
+                        <input type="button" name="next" class="next action-button" value="Submit" /> 
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                    </fieldset>
+
+                    <!-- <fieldset>
+                        <div class="form-card">
+                            <div class="row">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Finish:</h2>
+                                </div>
+                                <div class="col-5">
+                                    <h2 class="steps">Step 5 - 5</h2>
+                                </div>
+                            </div> <br><br>
+                            <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                            <div class="row justify-content-center">
+                                <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
+                            </div> <br><br>
+                            <div class="row justify-content-center">
+                                <div class="col-7 text-center">
+                                    <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                            </body>
+                        </html>

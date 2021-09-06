@@ -1,0 +1,104 @@
+.banner{
+  position: relative;
+  overflow: hidden;
+  background: $light;
+  background: url("../images/bg/slider-bg-1.jpg") no-repeat;
+  background-size: cover;
+  min-height: 550px;
+
+  .block{
+    padding: 80px 0px 160px;
+
+    h1{
+      font-size: 60px;
+      line-height: 1.2;
+      letter-spacing:-1.2px;
+      text-transform: capitalize;
+      color: $title-color;
+    }
+
+  }
+}
+
+.letter-spacing{
+  letter-spacing:2px;
+}
+
+
+.text-color{
+  color: $primary-color;
+}
+
+.text-color-2{
+  color: $secondary-color;
+}
+
+
+.divider{
+  width: 40px;
+  height:5px;
+  background: $secondary-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+@include mobile{
+   .banner .block h1 {
+      font-size: 38px;
+      line-height: 50px;
+  }
+
+  .banner{
+    min-height: 450px;
+    background: $light!important;
+  }
+}
+
+
+@include mobile-xs{
+    .banner .block h1 {
+      font-size: 28px;
+      line-height: 40px;
+  }
+
+  .banner{
+     min-height: 450px;
+    background: $light!important;
+  }
+
+}
+
+
+@include tablet{
+     .banner .block h1 {
+        font-size: 56px;
+        line-height: 70px;
+    }
+
+    .banner{
+      background: $light!important;
+    }
+
+}
+
+@include desktop{
+    .banner{
+      background: $light!important;
+    }
+}
+
+@include large-desktop{
+    .banner{
+      // background: $light!important;
+    }
+}
+
+

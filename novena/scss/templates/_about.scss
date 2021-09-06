@@ -1,0 +1,66 @@
+
+.about-img{
+	img{
+		border-radius:5px;
+		box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+	}
+}
+
+
+
+// Awards
+
+.award-img{
+	height: 120px;
+	margin-bottom: 10px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background:$gray;
+}
+
+
+//  Appoinment
+
+
+.appoinment-content{
+	position: relative;
+	img{
+		width: 85%;
+	}
+	.emergency{
+		position: absolute;
+		content: "";
+		right: 10px;
+		bottom: 20px;
+		background: $primary-color;
+		padding: 48px;
+
+		h2{
+			color: $light;
+		}
+
+		i{
+			margin-right: 10px;
+			color:rgba(255,255,255,.7);
+		}
+	}
+}
+
+
+.appoinment-form{
+	margin-top: 40px;
+	.form-control{
+		background: #f4f9fc;
+		height: 55px;
+		border-color:rgba(0,0,0,0.05);
+	}
+
+	textarea.form-control{
+		height:auto;
+	}
+}
+
+.client-thumb{
+	text-align: center;
+}

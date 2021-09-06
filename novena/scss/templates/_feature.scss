@@ -1,0 +1,43 @@
+
+
+// Home feature
+
+.features{
+	margin-top: -70px;
+}
+.feature-item{
+	flex-basis: 33.33%;
+	margin: 0px 10px;
+	padding: 40px 30px;
+	background-color: $light;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 0px 0px 30px 0px rgba(0,42,106,0.1);
+	.feature-icon{
+		i{
+			font-size: 50px;
+			color: $primary-color;
+		}
+	}
+
+	h4{
+		color: $primary-color;
+	}
+
+	p{
+		font-size: 14px;
+	}
+
+
+}
+
+.feature-section.border-top{
+	border-top:1px solid rgba(0,0,0,0.05)!important;
+}
+
+.w-hours{
+	li{
+		padding: 6px 0px;
+		border-bottom:1px solid rgba(0,0,0,0.05);
+	}
+}
+
