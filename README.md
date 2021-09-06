@@ -1,4 +1,4 @@
-# IoT-based-Healthcare-with AI Chatbot
+# IoT-based-Healthcare-with AI Chatbot and AWS
 This project aims at  providing an IoT based remote Health care kit and AI Chatbot which provides healthcare tips to patients, and effectively, reducing the cost of customer service and providing a vital communication link between doctors and patients.   
 
 ![image](https://user-images.githubusercontent.com/52970601/132244204-713f9358-4875-4fe6-a3b4-50f256470499.png)
